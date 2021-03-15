@@ -1,0 +1,6 @@
+commit 2
+const encrypt = require('mongoose-encryption');
+
+const secret = "Thisisourlittlesecret.";
+userSchema.plugin(encrypt,{secret: secret,encryptedFields: ['password'] });
+
